@@ -1,0 +1,20 @@
+name: my_upload_package
+description: "A new Flutter package project."
+version: 0.0.1
+homepage:
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  dio: ^5.4.0
+  retrofit: ^4.1.0
+  json_annotation: ^4.8.1
+  equatable: ^2.0.5
+  freezed_annotation: ^3.0.0
+
+dev_dependencies:
+  build_runner: ^2.4.8
+  json_serializable: ^6.9.5
+  retrofit_generator: ^9.1.9
+  freezed: ^3.0.6
