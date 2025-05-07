@@ -4,8 +4,8 @@ part 'image_model.freezed.dart';
 part 'image_model.g.dart';
 
 @freezed
-class ImageModel with _$ImageModel {
-  const ImageModel._(); // Private constructor
+abstract class ImageModel with _$ImageModel {
+  const ImageModel._();
 
   const factory ImageModel({
     required String path,

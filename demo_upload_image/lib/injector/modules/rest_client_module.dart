@@ -1,5 +1,5 @@
 import 'package:flutter_guide_ai/injector/injector.dart';
-// import 'package:rest_client/apis/login/login_api.dart';
+// import 'package:rest_client/protos/login/login_api.dart';
 
 import 'dio_module.dart';
 

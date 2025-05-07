@@ -1,5 +1,5 @@
 // import 'package:flutter_guide_ai/repositories/login_repo/login_repo.dart';
-// import 'package:rest_client/apis/login/login_api.dart';
+// import 'package:rest_client/protos/login/login_api.dart';
 
 import '../injector.dart';
 
