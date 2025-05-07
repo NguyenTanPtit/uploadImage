@@ -20,3 +20,4 @@ dev_dependencies:
   json_serializable: ^6.9.5
   retrofit_generator: ^9.1.9
   freezed: ^3.0.6
+  protoc_plugin: ^21.0.1

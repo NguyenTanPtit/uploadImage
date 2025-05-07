@@ -1,4 +1,6 @@
-import 'package:flutter_guide_ai/injector/injector.dart';
+
+
+import '../injector.dart';
 
 class ServiceModule {
   static void init() {

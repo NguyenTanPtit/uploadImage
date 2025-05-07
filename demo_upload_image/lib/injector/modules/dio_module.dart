@@ -1,6 +1,8 @@
 import 'package:dio/dio.dart';
-import 'package:flutter_guide_ai/configs/app_config/app_config.dart';
-import 'package:flutter_guide_ai/injector/injector.dart';
+
+import '../../configs/app_config/app_config.dart';
+import '../injector.dart';
+
 
 class DioModule {
   static const String dioInstanceName = 'dio';
