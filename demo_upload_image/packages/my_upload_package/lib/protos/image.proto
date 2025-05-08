@@ -17,9 +17,9 @@ message UploadImageRequest {
 }
 
 message UploadImageResponse {
-    string status = 1;
-    string message = 2;
-    string image_id = 3;
+    optional string status = 1;
+    optional string message = 2;
+    optional string image_id = 3;
 }
 
 service ImageUploadService {

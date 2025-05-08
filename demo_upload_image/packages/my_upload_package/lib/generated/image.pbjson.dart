@@ -50,33 +50,20 @@ final $typed_data.Uint8List uploadImageRequestDescriptor = $convert.base64Decode
 const UploadImageResponse$json = {
   '1': 'UploadImageResponse',
   '2': [
-    {'1': 'status', '3': 1, '4': 1, '5': 9, '10': 'status'},
-    {'1': 'message', '3': 2, '4': 1, '5': 9, '10': 'message'},
-    {'1': 'image_id', '3': 3, '4': 1, '5': 9, '10': 'imageId'},
+    {'1': 'status', '3': 1, '4': 1, '5': 9, '9': 0, '10': 'status', '17': true},
+    {'1': 'message', '3': 2, '4': 1, '5': 9, '9': 1, '10': 'message', '17': true},
+    {'1': 'image_id', '3': 3, '4': 1, '5': 9, '9': 2, '10': 'imageId', '17': true},
+  ],
+  '8': [
+    {'1': '_status'},
+    {'1': '_message'},
+    {'1': '_image_id'},
   ],
 };
 
 /// Descriptor for `UploadImageResponse`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List uploadImageResponseDescriptor = $convert.base64Decode(
-    'ChNVcGxvYWRJbWFnZVJlc3BvbnNlEhYKBnN0YXR1cxgBIAEoCVIGc3RhdHVzEhgKB21lc3NhZ2'
-    'UYAiABKAlSB21lc3NhZ2USGQoIaW1hZ2VfaWQYAyABKAlSB2ltYWdlSWQ=');
-
-const $core.Map<$core.String, $core.dynamic> ImageUploadServiceBase$json = {
-  '1': 'ImageUploadService',
-  '2': [
-    {'1': 'UploadImage', '2': '.fileupload.UploadImageRequest', '3': '.fileupload.UploadImageResponse'},
-  ],
-};
-
-@$core.Deprecated('Use imageUploadServiceDescriptor instead')
-const $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>> ImageUploadServiceBase$messageJson = {
-  '.fileupload.UploadImageRequest': UploadImageRequest$json,
-  '.fileupload.ImageMetadata': ImageMetadata$json,
-  '.fileupload.UploadImageResponse': UploadImageResponse$json,
-};
-
-/// Descriptor for `ImageUploadService`. Decode as a `google.protobuf.ServiceDescriptorProto`.
-final $typed_data.Uint8List imageUploadServiceDescriptor = $convert.base64Decode(
-    'ChJJbWFnZVVwbG9hZFNlcnZpY2USTgoLVXBsb2FkSW1hZ2USHi5maWxldXBsb2FkLlVwbG9hZE'
-    'ltYWdlUmVxdWVzdBofLmZpbGV1cGxvYWQuVXBsb2FkSW1hZ2VSZXNwb25zZQ==');
+    'ChNVcGxvYWRJbWFnZVJlc3BvbnNlEhsKBnN0YXR1cxgBIAEoCUgAUgZzdGF0dXOIAQESHQoHbW'
+    'Vzc2FnZRgCIAEoCUgBUgdtZXNzYWdliAEBEh4KCGltYWdlX2lkGAMgASgJSAJSB2ltYWdlSWSI'
+    'AQFCCQoHX3N0YXR1c0IKCghfbWVzc2FnZUILCglfaW1hZ2VfaWQ=');
 

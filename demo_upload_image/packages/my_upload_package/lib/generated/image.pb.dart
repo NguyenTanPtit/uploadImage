@@ -9,7 +9,6 @@
 // ignore_for_file: non_constant_identifier_names, prefer_final_fields
 // ignore_for_file: unnecessary_import, unnecessary_this, unused_import
 
-import 'dart:async' as $async;
 import 'dart:core' as $core;
 
 import 'package:fixnum/fixnum.dart' as $fixnum;
@@ -84,7 +83,7 @@ class ImageMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasFilename() => $_has(0);
   @$pb.TagNumber(1)
-  void clearFilename() => $_clearField(1);
+  void clearFilename() => clearField(1);
 
   @$pb.TagNumber(2)
   $core.String get contentType => $_getSZ(1);
@@ -93,7 +92,7 @@ class ImageMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasContentType() => $_has(1);
   @$pb.TagNumber(2)
-  void clearContentType() => $_clearField(2);
+  void clearContentType() => clearField(2);
 
   @$pb.TagNumber(3)
   $fixnum.Int64 get sizeBytes => $_getI64(2);
@@ -102,7 +101,7 @@ class ImageMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasSizeBytes() => $_has(2);
   @$pb.TagNumber(3)
-  void clearSizeBytes() => $_clearField(3);
+  void clearSizeBytes() => clearField(3);
 
   @$pb.TagNumber(4)
   $core.String get uploadedBy => $_getSZ(3);
@@ -111,7 +110,7 @@ class ImageMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasUploadedBy() => $_has(3);
   @$pb.TagNumber(4)
-  void clearUploadedBy() => $_clearField(4);
+  void clearUploadedBy() => clearField(4);
 
   @$pb.TagNumber(5)
   $core.String get description => $_getSZ(4);
@@ -120,7 +119,7 @@ class ImageMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasDescription() => $_has(4);
   @$pb.TagNumber(5)
-  void clearDescription() => $_clearField(5);
+  void clearDescription() => clearField(5);
 }
 
 class UploadImageRequest extends $pb.GeneratedMessage {
@@ -171,11 +170,11 @@ class UploadImageRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   ImageMetadata get metadata => $_getN(0);
   @$pb.TagNumber(1)
-  set metadata(ImageMetadata v) { $_setField(1, v); }
+  set metadata(ImageMetadata v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasMetadata() => $_has(0);
   @$pb.TagNumber(1)
-  void clearMetadata() => $_clearField(1);
+  void clearMetadata() => clearField(1);
   @$pb.TagNumber(1)
   ImageMetadata ensureMetadata() => $_ensure(0);
 
@@ -186,7 +185,7 @@ class UploadImageRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasImageData() => $_has(1);
   @$pb.TagNumber(2)
-  void clearImageData() => $_clearField(2);
+  void clearImageData() => clearField(2);
 }
 
 class UploadImageResponse extends $pb.GeneratedMessage {
@@ -246,7 +245,7 @@ class UploadImageResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasStatus() => $_has(0);
   @$pb.TagNumber(1)
-  void clearStatus() => $_clearField(1);
+  void clearStatus() => clearField(1);
 
   @$pb.TagNumber(2)
   $core.String get message => $_getSZ(1);
@@ -255,7 +254,7 @@ class UploadImageResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasMessage() => $_has(1);
   @$pb.TagNumber(2)
-  void clearMessage() => $_clearField(2);
+  void clearMessage() => clearField(2);
 
   @$pb.TagNumber(3)
   $core.String get imageId => $_getSZ(2);
@@ -264,16 +263,7 @@ class UploadImageResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasImageId() => $_has(2);
   @$pb.TagNumber(3)
-  void clearImageId() => $_clearField(3);
-}
-
-class ImageUploadServiceApi {
-  $pb.RpcClient _client;
-  ImageUploadServiceApi(this._client);
-
-  $async.Future<UploadImageResponse> uploadImage($pb.ClientContext? ctx, UploadImageRequest request) =>
-    _client.invoke<UploadImageResponse>(ctx, 'ImageUploadService', 'UploadImage', request, UploadImageResponse())
-  ;
+  void clearImageId() => clearField(3);
 }
 
 

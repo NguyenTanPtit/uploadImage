@@ -1,3 +1,4 @@
+import 'package:demo_upload_image/injector/modules/grpc_module.dart';
 import 'package:dio/dio.dart';
 // import 'package:flutter_guide_ai/repositories/login_repo/login_repo.dart';
 import 'package:get_it/get_it.dart';
@@ -22,5 +23,6 @@ class Injector {
     RestClientModule.init();
     ServiceModule.init();
     BlocModule.init();
+    GRPCModule.init();
   }
 }
