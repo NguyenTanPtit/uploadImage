@@ -80,7 +80,7 @@ class _FileUploadScreenState extends State<FileUploadScreen> {
                   height: 200,
                   decoration: BoxDecoration(
                     border: Border.all(color: Colors.grey),
-                    borderRadius: BorderRadius.circular(8),
+                    borderRadius: BorderRadius.circular(20),
                   ),
                   child: _selectedFile != null
                       ? _isVideo && _videoController != null && _videoController!.value.isInitialized
@@ -111,9 +111,12 @@ class _FileUploadScreenState extends State<FileUploadScreen> {
                 BlocBuilder<UploadCubit, UploadState>(
                   builder: (context, state) {
                     if (state is UploadLoadingState) {
-                      return const CircularProgressIndicator();
+                      return ElevatedButton(
+                        onPressed: _selectedFile != null ? _uploadFile : null,
+                        child: const CircularProgressIndicator(),
+                      );
                     } else if (state is UploadSuccessState) {
-                      return Text('Upload thành công: ${state.message}');
+                      return Text('Upload thành công, id image: ${state.message}');
                     } else if (state is UploadErrorState) {
                       return Column(
                         mainAxisAlignment: MainAxisAlignment.center,
